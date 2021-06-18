@@ -1,0 +1,73 @@
+@keyframes rotate {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+   
+    0%{background-color:blueviolet;}
+    25%{background-color: rgb(248, 122, 91);}
+    50%{background-color: rgba(11, 121, 184, 0.973)}
+    75%{background-color: rgb(175, 32, 111)}
+    100%{background-color: rgb(11, 43, 184)}
+   }
+   
+   @keyframes slide {
+       from { left: 0; }
+       to   { left:100%; /* 200px - 20px */ }
+   }
+   
+   
+   #circle {
+       width: 20px;
+       height: 20px;
+       background: red;
+       position: absolute;
+       animation: 3.6s linear infinite alternate slide;
+       border-radius: 30px; 
+   }
+   
+   
+   body{
+     margin: 0; 
+   }
+   
+   #firstDiv{
+     width: 200px; 
+     height: 200px; 
+     background-color: yellow; 
+   }
+   
+   .container{
+     display: flex; 
+     justify-content: center; 
+     margin-top:10%; 
+     margin-right: 6%; 
+   }
+   
+   .changedDiv{
+     width: 200px; 
+     height: 200px; 
+    
+     bottom: 200px; 
+     background-color: blueviolet; 
+     animation-name: rotate; 
+     transition-timing-function: ease-in-out;
+     animation-duration: 4s; 
+     animation-iteration-count: infinite; 
+   }
+   
+   span{
+   margin: 0 40%; 
+   white-space: nowrap;
+   font-family: cursive; 
+   }
+   
+   nav{
+     padding: 2%; 
+     background-color: bisque; 
+   }
+    nav a{
+      color: black; 
+      font-family: cursive; 
+    }
+   
+   
+   
